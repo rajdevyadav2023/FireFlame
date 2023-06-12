@@ -1,0 +1,134 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f1f1ff;
+}
+
+header {
+    height: 10vh;
+    background-color: purple;
+    color: white;
+    box-shadow: 0px 0px 10px #8080807d, 0px 0px 12px #80808091;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+section {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 5px #80808033;
+
+}
+
+.container .box {
+    width: 450px;
+    height: 300px;
+    border: 1px solid #ddd;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+.color {
+    display: flex;
+}
+
+.color-box {
+    height: 40px;
+    width: 60px;
+    border: 1px solid #ddd;
+    margin-right: 1rem;
+}
+
+.color input {
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #ddd;
+    color: #999;
+}
+
+.btn-group {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-group button {
+    width: 250px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background-color: #ac44ac;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn-group button:hover {
+    background-color: #752675;
+}
+.btn-group button:active{
+transform: scale(.9);
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+}
+
+/* css for responsiveness  */
+@media (min-width: 300px) and (max-width: 700px) {
+    .container{
+        width: 90%;
+        padding: 1rem;
+    }
+    .container .box{
+        width: 90%;
+        height: 200px;
+        margin-bottom: .5rem;
+    }
+    .colors{
+        flex-direction: column;
+    }
+    .color{
+        
+        margin: .3rem auto;
+    }
+    .btn-group{
+        margin-top: .5rem;
+    }
+}
